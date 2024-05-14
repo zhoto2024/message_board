@@ -13,7 +13,7 @@ import models.Message;
 /**
  * Servlet implementation class NewServlet
  */
-@WebServlet({ "/NewServlet", "/new" })
+@WebServlet({"/new" })
 public class NewServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
 
