@@ -5,8 +5,8 @@
     <c:param name="content">
         <c:choose>
         <%--JSTLで、chooseタグの後は条件分岐できる。 --%>
-            <c:when test="${message != null} }">
-            <h2>id : ${message.id} のメッセージ詳細ページ</h2>
+            <c:when test="${message != null}">
+                <h2>id : ${message.id} のメッセージ詳細ページ</h2>
 
                 <table>
                     <tbody>
@@ -29,12 +29,12 @@
                     </tbody>
                 </table>
 
-            <p><a href="${pageContext.request.contextPath}/index">一覧に戻る</a></p>
-            <p><a href="${pageContext.request.contextPath}/edit?id=${message.id}">このメッセージを編集する</a></p>
-       </c:when>
-       <c:otherwise>
-            <h2>お探しのデータは見つかりませんでした。</h2>
-       </c:otherwise>
-    </c:choose>
-  </c:param>
+        <p><a href="${pageContext.request.contextPath}/index">一覧に戻る</a></p>
+        <p><a href="${pageContext.request.contextPath}/edit?id=${message.id}">このメッセージを編集する</a></p>
+            </c:when>
+            <c:otherwise>
+                <h2>お探しのデータは見つかりませんでした。</h2>
+            </c:otherwise>
+        </c:choose>
+    </c:param>
 </c:import>
